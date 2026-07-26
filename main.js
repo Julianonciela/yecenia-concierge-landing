@@ -53,8 +53,8 @@
       conciergeBadge2: 'Same-day response',
 
       // Why Me
-      whyMeTitle: 'Why me? Because I actually live here.',
-      whyMeText: 'I moved to the Central Coast because I fell in love with the land, the people, and the pace. I\'m not a staffing agency or a franchise — I\'m one person who cares about doing a good job for the people and places in my community. When you work with me, you\'re working with me.',
+      whyMeTitle: "Why me? Because there's no call center behind me.",
+      whyMeText: "No call center picks up when you message — I do. I'm the one leading the walking tour, sitting with your parent in Morro Bay, checking the rental before your guests walk in. If something's not right, you're not stuck chasing a company for an answer. You're texting the person who actually did the work.",
       whyMePlaceholder: 'Meet Yecenia',
       whyMeBadge1: 'Bilingual — English & Spanish',
       whyMeBadge2: 'Locally based — Paso Robles & Morro Bay',
@@ -170,8 +170,8 @@
       conciergeBadge2: 'Respuesta el mismo día',
 
       // Why Me
-      whyMeTitle: '¿Por qué yo? Porque realmente vivo aquí.',
-      whyMeText: 'Me mudé a la Costa Central porque me enamoré de la tierra, la gente y el ritmo de vida. No soy una agencia ni una franquicia — soy una persona que se preocupa por hacer un buen trabajo para las personas y los lugares de mi comunidad. Cuando trabajas conmigo, trabajas conmigo.',
+      whyMeTitle: "¿Por qué yo? Porque no hay un call center detrás de mí.",
+      whyMeText: "Nadie en un call center responde tus mensajes — lo hago yo. Soy quien guía el tour a pie, quien acompaña a tu familiar en Morro Bay, quien revisa la renta antes de que lleguen tus huéspedes. Si algo no sale bien, no tienes que perseguir a una empresa para obtener una respuesta. Le escribes directamente a la persona que hizo el trabajo.",
       whyMePlaceholder: 'Conoce a Yecenia',
       whyMeBadge1: 'Bilingüe — Inglés y Español',
       whyMeBadge2: 'Local — Paso Robles y Morro Bay',
