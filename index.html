@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yecenia Local — Tours, Senior Care & Concierge on California's Central Coast</title>
+  <meta name="description" content="Yecenia is an independent local concierge on California's Central Coast. Bilingual walking tours in Paso Robles, senior companion care in Morro Bay, and vacation rental management.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip link (first focusable element for keyboard users) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============================================================
+       HEADER / NAV
+  ============================================================ -->
+  <header class="site-header" role="banner">
+    <nav class="container nav" aria-label="Main navigation">
+      <a href="#" class="nav__logo" aria-label="Yecenia Local — home">
+        Yecenia<span> Local</span>
+      </a>
+
+      <!-- Mobile overlay -->
+      <div class="nav__overlay" aria-hidden="true"></div>
+
+      <!-- Nav links -->
+      <div class="nav__links" id="nav-links">
+        <a href="#tours" data-i18n="navTours">Tours</a>
+        <a href="#senior-care" data-i18n="navSenior">Senior Care</a>
+        <a href="#concierge" data-i18n="navConcierge">Concierge</a>
+        <a href="#why-me" data-i18n="navAbout">About</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+
+        <!-- Language toggle -->
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button data-lang="en" class="active" aria-pressed="true">EN</button>
+          <button data-lang="es" aria-pressed="false">ES</button>
+        </div>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button class="nav__mobile-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         1. HERO
+    ============================================================ -->
+    <section class="hero" id="hero">
+      <picture class="hero__photo">
+        <source media="(max-width: 767px)" srcset="assets/hero-atmosphere-mobile.jpg">
+        <img src="assets/hero-atmosphere-desktop.jpg"
+             alt="Golden-hour view of Central Coast vineyard hills with a lone oak tree"
+             loading="eager" fetchpriority="high">
+      </picture>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__tagline" data-i18n="heroTagline">Central Coast Concierge</p>
+        <h1 data-i18n="heroTitle">Local help you can actually trust, from Paso Robles to Morro Bay.</h1>
+        <p class="hero__subtitle" data-i18n="heroSubtitle">Tours, senior companionship, and vacation rental support — from one local person who knows this coast by heart.</p>
+
+        <div class="hero__selector">
+          <p class="hero__selector-label" data-i18n="selectorLabel">How can I help you?</p>
+          <div class="hero__selector-buttons">
+            <a href="#tours" class="selector-btn selector-btn--apricot" data-i18n="selectorTours">
+              I'm looking for a local tour or translation
+            </a>
+            <a href="#senior-care" class="selector-btn selector-btn--olive" data-i18n="selectorSenior">
+              I need help caring for a family member
+            </a>
+            <a href="#concierge" class="selector-btn selector-btn--golden" data-i18n="selectorConcierge">
+              I manage a vacation rental
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. SVG ROUTE LINE (runs alongside the three service sections)
+    ============================================================ -->
+    <div class="route-line-container" aria-hidden="true">
+
+      <!-- The SVG route line is positioned via CSS alongside the service sections.
+           It draws on scroll. The pins are placed at section boundaries. -->
+
+      <!-- ============================================================
+           3. SECTION: TOURS & LANGUAGE (Apricot)
+      ============================================================ -->
+      <section class="service service--apricot section" id="tours">
+        <div class="service__accent-bar" aria-hidden="true"></div>
+        <div class="container service__inner">
+          <div class="service__content reveal">
+            <div class="service__icon" aria-hidden="true">
+              <img src="assets/icon-tours.png" alt="" class="service__icon-img">
+            </div>
+            <p class="label service__label" data-i18n="toursLabel">Tours & Language Services</p>
+            <h2 data-i18n="toursTitle">See Paso Robles through local eyes</h2>
+            <p class="service__desc" data-i18n="toursDesc">Walk the historic downtown with someone who actually lives here. I lead small-group walking tours in Spanish and English, covering the stories, flavors, and hidden corners that the guidebooks miss. I also offer translation and interpretation services for visitors, businesses, and families who need bilingual support on the Central Coast.</p>
+            <div class="service__badges">
+              <span class="badge badge--apricot" data-i18n="toursBadge1">Bilingual tours</span>
+              <span class="badge badge--apricot" data-i18n="toursBadge2">Paso Robles & Atascadero</span>
+            </div>
+            <a href="#contact" class="btn btn--apricot" data-i18n="toursCta">Ask about tour times</a>
+          </div>
+          <div class="service__visual reveal">
+            <img src="assets/photos/tours-service.jpg" alt="Historic downtown Paso Robles street at golden hour" class="service__photo">
+          </div>
+        </div>
+      </section>
+
+      <!-- Pin: Paso Robles & Atascadero -->
+      <div class="route-pin" data-pin="paso-robles" style="display:none;">
+        <div class="route-pin__dot" style="background:var(--apricot);"></div>
+        <span class="route-pin__label">Paso Robles &amp; Atascadero</span>
+      </div>
+
+      <!-- ============================================================
+           4. SECTION: SENIOR COMPANION CARE (Olive)
+      ============================================================ -->
+      <section class="service service--olive section" id="senior-care">
+        <div class="service__accent-bar" aria-hidden="true"></div>
+        <div class="container service__inner">
+          <div class="service__visual reveal">
+            <img src="assets/photos/senior-service.jpg" alt="A bench overlooking the water with Morro Rock in the distance" class="service__photo">
+          </div>
+          <div class="service__content reveal">
+            <div class="service__icon" aria-hidden="true">
+              <img src="assets/icon-senior-care.png" alt="" class="service__icon-img">
+            </div>
+            <p class="label service__label" data-i18n="seniorLabel">Senior Companion Care</p>
+            <h2 data-i18n="seniorTitle">A familiar face for your loved one in Morro Bay</h2>
+            <p class="service__desc" data-i18n="seniorDesc">Sometimes all someone needs is company — a home-cooked meal, a ride to a doctor's appointment, someone to sit with on the porch and watch the ocean. I provide companionship, light housekeeping, cooking, and driving for seniors in Morro Bay and surrounding areas.</p>
+            <div class="service__badges">
+              <span class="badge badge--olive" data-i18n="seniorBadge1">Registered with the California Home Care Aide Registry</span>
+              <span class="badge badge--olive" data-i18n="seniorBadge2">Morro Bay area</span>
+            </div>
+            <a href="#contact" class="btn btn--olive" data-i18n="seniorCta">Ask about senior care</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pin: Morro Bay (placed at the section that actually describes Morro Bay) -->
+      <div class="route-pin" data-pin="morro-bay" style="display:none;">
+        <div class="route-pin__dot" style="background:var(--olive);"></div>
+        <span class="route-pin__label">Morro Bay</span>
+      </div>
+
+      <!-- ============================================================
+           5. SECTION: CONCIERGE & TURNOVER (Golden)
+      ============================================================ -->
+      <section class="service service--golden section" id="concierge">
+        <div class="service__accent-bar" aria-hidden="true"></div>
+        <div class="container service__inner">
+          <div class="service__content reveal">
+            <div class="service__icon" aria-hidden="true">
+              <img src="assets/icon-concierge.png" alt="" class="service__icon-img">
+            </div>
+            <p class="label service__label" data-i18n="conciergeLabel">Concierge & Turnover</p>
+            <h2 data-i18n="conciergeTitle">Your vacation rental runs itself — because someone local is watching it</h2>
+            <p class="service__desc" data-i18n="conciergeDesc">Guest check-in, turnover cleaning, restocking, and coordination between stays. I work with property owners in both Paso Robles/Atascadero and Morro Bay to keep their rentals running smoothly, so they don't have to be on-site for every little thing.</p>
+            <div class="service__badges">
+              <span class="badge badge--golden" data-i18n="conciergeBadge1">Paso Robles & Morro Bay</span>
+              <span class="badge badge--golden" data-i18n="conciergeBadge2">Same-day response</span>
+            </div>
+            <a href="#contact" class="btn btn--golden" data-i18n="conciergeCta">Get a cleaning quote</a>
+          </div>
+          <div class="service__visual reveal">
+            <img src="assets/photos/concierge-service.jpg" alt="A welcoming vacation rental living room with a vineyard view" class="service__photo">
+          </div>
+        </div>
+      </section>
+
+      <!-- SVG Route Line (overlays the three service sections) -->
+      <svg class="route-svg" id="route-svg" width="60" height="100" viewBox="0 0 60 100" preserveAspectRatio="none" aria-hidden="true" style="display:none;">
+        <path class="route-main-line"
+              d="M 30 0 C 30 15, 35 25, 30 40 C 25 55, 35 65, 30 80 C 25 95, 30 100, 30 100"
+              fill="none"
+              stroke="#2E2350"
+              stroke-width="2"
+              stroke-linecap="round"
+        />
+      </svg>
+
+    </div><!-- /.route-line-container -->
+
+    <!-- ============================================================
+         6. WHY ME
+    ============================================================ -->
+    <section class="why-me section" id="why-me">
+      <div class="container why-me__inner">
+        <div class="why-me__photo reveal">
+          <img src="assets/yecenia-whyme.jpg" alt="Yecenia in a Central Coast vineyard">
+        </div>
+        <div class="why-me__body reveal">
+          <h2 data-i18n="whyMeTitle">Why me? Because I actually live here.</h2>
+          <span class="why-me__intro-badge" data-i18n="whyMePlaceholder">Meet Yecenia</span>
+          <p class="why-me__text" data-i18n="whyMeText">I moved to the Central Coast because I fell in love with the land, the people, and the pace. I'm not a staffing agency or a franchise — I'm one person who cares about doing a good job for the people and places in my community. When you work with me, you're working with me.</p>
+          <div class="why-me__badges">
+            <span class="badge badge--light badge--has-icon">
+              <img src="assets/badge-bilingual.png" alt="" class="badge__icon">
+              <span data-i18n="whyMeBadge1">Bilingual — English & Spanish</span>
+            </span>
+            <span class="badge badge--light badge--has-icon">
+              <img src="assets/badge-local.png" alt="" class="badge__icon">
+              <span data-i18n="whyMeBadge2">Locally based — Paso Robles & Morro Bay</span>
+            </span>
+            <span class="badge badge--light badge--has-icon">
+              <img src="assets/badge-verified.png" alt="" class="badge__icon">
+              <span data-i18n="whyMeBadge3">Registered & background-checked</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. HOW IT WORKS
+    ============================================================ -->
+    <section class="how-it-works section" id="how-it-works">
+      <div class="container">
+        <h2 data-i18n="howTitle">Here's how it works</h2>
+        <div class="steps">
+          <!-- Step 1 -->
+          <div class="step reveal">
+            <div class="step__number" aria-hidden="true">1</div>
+            <h3 data-i18n="howStep1Title">Reach out</h3>
+            <p data-i18n="howStep1Desc">Send a message via WhatsApp, phone, or the form below. Tell me what you need.</p>
+            <div class="step__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="step reveal">
+            <div class="step__number" aria-hidden="true">2</div>
+            <h3 data-i18n="howStep2Title">We talk it through</h3>
+            <p data-i18n="howStep2Desc">I'll ask a few questions so I understand exactly what would help you most.</p>
+            <div class="step__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="step reveal">
+            <div class="step__number" aria-hidden="true">3</div>
+            <h3 data-i18n="howStep3Title">First visit or service</h3>
+            <p data-i18n="howStep3Desc">We schedule the first session — a tour, a care visit, or a rental walkthrough.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. FOR PROPERTY OWNERS
+    ============================================================ -->
+    <section class="property-owners section" id="property-owners">
+      <div class="container property-owners__inner">
+        <p class="label" data-i18n="poLabel">For Property Owners</p>
+        <h2 data-i18n="poTitle">Your rental deserves someone local who picks up the phone</h2>
+        <p class="property-owners__desc" data-i18n="poDesc">You can't always be on-site when something goes wrong between bookings. I live here. I speak Spanish and English, which matters for a growing number of your guests. And I actually respond — same day, every time.</p>
+
+        <div class="property-owners__features">
+          <div class="po-feature reveal">
+            <div class="po-feature__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="poFeature1Title">Always reachable</h3>
+            <p data-i18n="poFeature1Desc">Same-day response, every time. No ticket systems, no hold music.</p>
+          </div>
+          <div class="po-feature reveal">
+            <div class="po-feature__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="10" r="3"/>
+                <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="poFeature2Title">Truly local</h3>
+            <p data-i18n="poFeature2Desc">Based in Paso Robles and Morro Bay. I'm 15 minutes away, not three hours.</p>
+          </div>
+          <div class="po-feature reveal">
+            <div class="po-feature__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="poFeature3Title">Bilingual service</h3>
+            <p data-i18n="poFeature3Desc">Spanish-speaking guests feel welcomed and understood from the first message.</p>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn--golden" data-i18n="poCta">Message Yecenia about your rental</a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         9. GALLERY
+    ============================================================ -->
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <h2 data-i18n="galleryTitle">From the Central Coast</h2>
+        <div class="gallery__grid">
+          <div class="gallery__item gallery__item--photo reveal" style="--card-border-color: var(--olive);">
+              <img src="assets/photos/gallery-morrobay-coastline.jpg" alt="Morro Bay coastline at sunrise with Morro Rock in the fog" class="gallery__photo">
+            </div>
+          <div class="gallery__item gallery__item--photo reveal" style="--card-border-color: var(--golden);">
+              <img src="assets/photos/gallery-atascadero.jpg" alt="A winding country road through the golden hills near Atascadero" class="gallery__photo">
+            </div>
+          <div class="gallery__item gallery__item--photo reveal" style="--card-border-color: var(--apricot);">
+              <img src="assets/photos/gallery-tour-in-progress.jpg" alt="A small group walking through historic downtown Paso Robles" class="gallery__photo">
+            </div>
+          <div class="gallery__item gallery__item--photo reveal" style="--card-border-color: var(--apricot);">
+              <img src="assets/photos/gallery-local-scenery.jpg" alt="A Central Coast vineyard row at sunset with a lone oak tree" class="gallery__photo">
+            </div>
+          <div class="gallery__item gallery__item--photo reveal" style="--card-border-color: var(--golden);">
+              <img src="assets/photos/gallery-vacation-interior.jpg" alt="A bright, tidy vacation rental bedroom" class="gallery__photo">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TESTIMONIALS PLACEHOLDER
+    ============================================================ -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <h2 data-i18n="testimonialsTitle">What people are saying</h2>
+          <div class="testimonials__placeholder">
+            <div class="testimonials__quote-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <p data-i18n="testimonialsPlaceholder">Real client stories will be shared here soon. Yecenia values honest relationships — check back after our first sessions.</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         10. CONTACT
+    ============================================================ -->
+    <section class="contact section" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__form-side reveal">
+          <h2 data-i18n="contactTitle">Let's talk</h2>
+          <p class="contact__subtitle" data-i18n="contactSubtitle">Whether you have a quick question or want to discuss ongoing help, I'd love to hear from you.</p>
+
+          <!-- Formspree — replace YOUR_FORM_ID with real Formspree endpoint -->
+          <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-field">
+              <label for="form-name" data-i18n="formName">Your name</label>
+              <input type="text" id="form-name" name="name" required
+                     data-i18n="formNamePlaceholder" data-i18n-attr="placeholder"
+                     placeholder="First name is fine"
+                     autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="form-contact" data-i18n="formContact">Best way to reach you</label>
+              <input type="text" id="form-contact" name="contact" required
+                     data-i18n="formContactPlaceholder" data-i18n-attr="placeholder"
+                     placeholder="Phone, email, or WhatsApp number">
+            </div>
+            <div class="form-field">
+              <label for="form-message" data-i18n="formMessage">What do you need help with?</label>
+              <textarea id="form-message" name="message" required
+                        data-i18n="formMessagePlaceholder" data-i18n-attr="placeholder"
+                        placeholder="Tell me a bit about what you're looking for..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--apricot" data-i18n="formSubmit">Send message to Yecenia</button>
+            <p style="font-size:0.8rem; color:rgba(255,255,255,0.45); margin-top:var(--sp-2);">
+              <a href="mailto:hello@yecenialocal.com" style="color:var(--apricot); text-decoration:underline;" data-i18n="formFallback">Or email directly</a>
+            </p>
+          </form>
+        </div>
+
+        <div class="contact__info reveal">
+          <div class="contact__direct">
+            <h3 data-i18n="contactDirectTitle">Prefer to reach out directly?</h3>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/19497955535?text=Hi%20Yecenia!%20I%20found%20your%20website%20and%20wanted%20to%20ask%20about%20your%20services."
+               class="contact__method"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span class="contact__method-icon contact__method-icon--whatsapp" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+              </span>
+              <span class="contact__method-text">
+                <span class="contact__method-label" data-i18n="contactWhatsappLabel">WhatsApp</span>
+                <span class="contact__method-value" data-i18n="contactWhatsappValue">Message Yecenia</span>
+              </span>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+19497955535" class="contact__method">
+              <span class="contact__method-icon contact__method-icon--phone" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+              <span class="contact__method-text">
+                <span class="contact__method-label" data-i18n="contactPhoneLabel">Phone</span>
+                <span class="contact__method-value" data-i18n="contactPhoneValue">(949) 795-5535</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="contact__area">
+            <h3 data-i18n="contactAreaTitle">Service area</h3>
+            <div class="contact__area-list">
+              <span class="contact__area-item">Paso Robles</span>
+              <span class="contact__area-item">Atascadero</span>
+              <span class="contact__area-item">Morro Bay</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       11. FOOTER
+  ============================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <!-- Faint closed-loop route line -->
+      <svg class="footer__route-svg" width="180" height="50" viewBox="0 0 180 50" aria-hidden="true">
+        <path d="M 25 25 C 60 10, 120 40, 155 25"
+              fill="none"
+              stroke="rgba(255,255,255,0.4)"
+              stroke-width="1.5"
+              stroke-linecap="round"/>
+        <!-- Pin dots -->
+        <circle cx="25" cy="25" r="3" fill="rgba(217,142,63,0.5)"/>
+        <circle cx="155" cy="25" r="3" fill="rgba(110,123,62,0.5)"/>
+        <!-- Labels -->
+        <text x="25" y="45" font-family="'IBM Plex Mono', monospace" font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="middle">Paso &amp; Atascadero</text>
+        <text x="155" y="45" font-family="'IBM Plex Mono', monospace" font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="middle">Morro Bay</text>
+      </svg>
+
+      <div class="footer__logo" aria-hidden="true">
+        Yecenia<span> Local</span>
+      </div>
+
+      <div class="footer__social">
+        <a href="#" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+        </a>
+      </div>
+
+      <p class="footer__legal" data-i18n="footerLegal">© 2026 Yecenia Local. All rights reserved. Paso Robles, CA.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       MOBILE STICKY BAR
+  ============================================================ -->
+  <div class="mobile-bar" role="complementary" aria-label="Quick contact">
+    <a href="https://wa.me/19497955535?text=Hi%20Yecenia!" class="mobile-bar__wa" target="_blank" rel="noopener noreferrer" data-i18n="mobileWa">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      WhatsApp Yecenia
+    </a>
+    <a href="tel:+19497955535" class="mobile-bar__phone" data-i18n="mobilePhone">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.86.37 1.69.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c1.12.33 1.95.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      Call
+    </a>
+    <button class="mobile-bar__dismiss" aria-label="Close contact bar">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Main script -->
+  <script src="main.js?v=6"></script>
+
+  <!-- Route line positioning script (runs after DOM is ready) -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Position the SVG route line alongside the service sections
+      // This is a layout-specific script that maps the SVG to the page spine
+
+      function positionRouteLine() {
+        const container = document.querySelector('.route-line-container');
+        const svg = document.getElementById('route-svg');
+        const pins = document.querySelectorAll('.route-pin');
+        const sections = [
+          document.getElementById('tours'),
+          document.getElementById('senior-care'),
+          document.getElementById('concierge')
+        ];
+
+        if (!container || !svg || sections.some(s => !s)) return;
+
+        // Calculate the span of the three service sections
+        const containerRect = container.getBoundingClientRect();
+        const containerTop = container.offsetTop;
+        const containerHeight = container.offsetHeight;
+
+        // Position SVG to cover the full container
+        svg.style.display = 'block';
+        svg.style.position = 'absolute';
+        svg.style.top = '0';
+        svg.style.left = '50%';
+        svg.style.transform = 'translateX(-50%)';
+        svg.style.width = '60px';
+        svg.style.height = containerHeight + 'px';
+        svg.setAttribute('viewBox', '0 0 60 ' + containerHeight);
+        svg.setAttribute('height', containerHeight);
+
+        // Update the path to match the actual height
+        const path = svg.querySelector('.route-main-line');
+        if (path) {
+          const h = containerHeight;
+          const mid1 = h * 0.33;
+          const mid2 = h * 0.66;
+          path.setAttribute('d',
+            'M 30 0 ' +
+            'C 30 ' + (mid1 * 0.4) + ', 38 ' + (mid1 * 0.7) + ', 30 ' + mid1 + ' ' +
+            'C 22 ' + (mid1 + (mid2 - mid1) * 0.3) + ', 38 ' + (mid1 + (mid2 - mid1) * 0.7) + ', 30 ' + mid2 + ' ' +
+            'C 22 ' + (mid2 + (h - mid2) * 0.3) + ', 38 ' + (mid2 + (h - mid2) * 0.7) + ', 30 ' + h
+          );
+
+          // Re-calculate total length for animation
+          const lineLength = path.getTotalLength();
+          path.style.setProperty('--line-length', lineLength);
+          path.style.strokeDasharray = lineLength;
+
+          const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          if (prefersReduced) {
+            path.style.strokeDashoffset = '0';
+          } else if (!path.classList.contains('drawn')) {
+            path.style.strokeDashoffset = lineLength;
+          }
+        }
+
+        // Position pins at section midpoints relative to the container.
+        // Only two real pins: Tours (Paso Robles & Atascadero) and Senior
+        // Care (Morro Bay). Concierge spans both zones, so it doesn't get
+        // its own pin — the line simply continues past it to the footer.
+        const pinData = [
+          { pin: document.querySelector('[data-pin="paso-robles"]'), section: sections[0] },
+          { pin: document.querySelector('[data-pin="morro-bay"]'), section: sections[1] }
+        ];
+
+        pinData.forEach(({ pin, section }) => {
+          if (!pin || !section) return;
+          const sectionTop = section.getBoundingClientRect().top - container.getBoundingClientRect().top;
+          const sectionHeight = section.offsetHeight;
+          const pinTop = sectionTop + sectionHeight * 0.5;
+
+          pin.style.display = 'flex';
+          pin.style.position = 'absolute';
+          pin.style.top = pinTop + 'px';
+          pin.style.left = '50%';
+        });
+
+        // Only show on desktop (hidden on mobile where the spine would be too narrow)
+        const mediaQuery = window.matchMedia('(min-width: 1200px)');
+        function handleMedia(e) {
+          const show = e.matches;
+          svg.style.display = show ? 'block' : 'none';
+          pins.forEach(pin => { pin.style.display = show ? 'flex' : 'none'; });
+        }
+        handleMedia(mediaQuery);
+        mediaQuery.addEventListener('change', handleMedia);
+      }
+
+      // Run after fonts and layout are settled
+      if (document.readyState === 'complete') {
+        positionRouteLine();
+      } else {
+        window.addEventListener('load', positionRouteLine);
+      }
+
+      // Reposition on resize
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(positionRouteLine, 200);
+      });
+    })();
+  </script>
+</body>
+</html>
